@@ -61,10 +61,9 @@ export function RouteMap() {
 
 export function GiftPhones() {
   return (
-    <div className="gift-phones" aria-label="iPhone 17 или iPhone 18">
-      <div><span className="phone pink"><i/><b></b></span><em>iPhone 17</em></div>
-      <span className="gift-or">или<br/>♡</span>
-      <div><span className="phone sage"><i/><b></b></span><em>iPhone 18</em></div>
+    <div className="gift-phones-real" aria-label="iPhone 17 или iPhone 18">
+      <Photo src="iphones-real-v1.webp" alt="Розовый и шалфейный iPhone" />
+      <div className="phone-labels"><span>iPhone 17</span><i>или ♡</i><span>iPhone 18</span></div>
     </div>
   )
 }
