@@ -9,8 +9,9 @@ import Screen05Dating2 from './screens/Screen05Dating2'
 import Screen06Dating3 from './screens/Screen06Dating3'
 import Screen07Superlike from './screens/Screen07Superlike'
 import Screen08Invite from './screens/Screen08Invite'
-import Screen09Gift from './screens/Screen09Gift'
-import Screen10Result from './screens/Screen10Result'
+import Screen09Route from './screens/Screen09Route'
+import Screen10Gift from './screens/Screen10Gift'
+import Screen11Result from './screens/Screen11Result'
 
 const SCREENS = [
   Screen01Start,
@@ -21,8 +22,9 @@ const SCREENS = [
   Screen06Dating3,
   Screen07Superlike,
   Screen08Invite,
-  Screen09Gift,
-  Screen10Result,
+  Screen09Route,
+  Screen10Gift,
+  Screen11Result,
 ]
 
 export default function App() {
