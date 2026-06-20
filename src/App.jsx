@@ -26,7 +26,10 @@ const SCREENS = [
 ]
 
 export default function App() {
-  const [currentScreen, setCurrentScreen] = useState(0)
+  const previewScreen = Number(new URLSearchParams(window.location.search).get('screen'))
+  const [currentScreen, setCurrentScreen] = useState(
+    Number.isInteger(previewScreen) && previewScreen >= 0 && previewScreen < SCREENS.length ? previewScreen : 0
+  )
   const [gameState, setGameState] = useState(initialState)
 
   const goNext = () => setCurrentScreen(s => Math.min(s + 1, SCREENS.length - 1))

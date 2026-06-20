@@ -2,11 +2,11 @@ export default function Button({ children, onClick, variant = 'primary' }) {
   const base = {
     display: 'block',
     width: '100%',
-    padding: '15px var(--space-lg)',
-    borderRadius: 'var(--radius-md)',
+    padding: '13px var(--space-lg)',
+    borderRadius: '7px',
     fontFamily: 'var(--font-body)',
-    fontSize: '0.95rem',
-    fontWeight: 700,
+    fontSize: '0.86rem',
+    fontWeight: 600,
     cursor: 'pointer',
     transition: 'transform 120ms ease, opacity 120ms ease',
     border: 'none',
@@ -15,13 +15,13 @@ export default function Button({ children, onClick, variant = 'primary' }) {
 
   const variants = {
     primary: {
-      background: 'var(--color-rose)',
+      background: 'linear-gradient(135deg, #e16884, #cf4f6d)',
       color: '#fff',
+      boxShadow: '0 6px 14px rgba(173, 64, 88, .2)',
     },
     secondary: {
-      background: 'var(--color-surface)',
-      color: 'var(--color-rose)',
-      border: '1.5px solid var(--color-blush)',
+      background: '#8d967a',
+      color: '#fff',
     },
     ghost: {
       background: 'transparent',
